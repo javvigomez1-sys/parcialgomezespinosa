@@ -9,9 +9,9 @@ nav{
 }
 header {
     align-items: left;
+    margin: auto;
     height: 100%;
     width: 70%;
-    margin: auto;
 }
 header img {
     height: 500px;
@@ -28,7 +28,6 @@ img {
 
 body {
     margin: 0;
-    display: flex;
 }
 
 main {
@@ -40,9 +39,10 @@ main {
     width: 80%;
     margin: 0 auto;
     display: flex;
-    align-items: center;
     justify-content: space-evenly;
+    align-items: center;
     flex-wrap: wrap;
+    align-content: space-evenly;
 }
 
 .item {
@@ -55,12 +55,12 @@ main a {
     color: white;
     height: 45px;
     width: 30%;
-    text-align: center;
     text-decoration: none;
+    text-align: center;
     display: inline-block;
-    border: 2px solid #ccc;
-    padding: 10px 20px;
     border-radius: 5px;
+    padding: 10px 20px;
+    border: 2px solid #ccc;
 }
 main a:hover {
     background-color: rgb(104, 54, 243);
@@ -69,11 +69,11 @@ main a:hover {
     display: inline-block;
     height: 45px;
     width: 35%;
-    text-align: center;
     text-decoration: none;
-    border: 2px solid #ccc;
-    padding: 10px 20px;
+    text-align: center;
     border-radius: 20px;
+    padding: 10px 20px;
+    border: 2px solid #ccc;
 }
 
 #contacto {
@@ -94,17 +94,25 @@ main a:hover {
 }
 
 #adicional {
-   display: flex;
-    justify-content: space-between;
-    gap: 20px;
     width: 80%;
     margin: 50px auto;
+    display: flex;
+    justify-content:space-between;
+    align-items: stretch;
+    gap: 40px;
 }
-.info, .criterio, .mapa {
-    flex: 1;
-    padding: 10px;
+
 .mapa h1 {
     margin-bottom: 20px;
+}
+
+.mapa h2 {
+    margin-bottom: 10px;
+}
+
+.mapa p {
+    color: #ffffff;
+    line-height: 1.5;
 }
 .mapa a{
     background-color: rgb(128, 89, 255);
@@ -113,67 +121,69 @@ main a:hover {
     display: inline-block;
     height: 30px;
     width: 70;
-    text-align: center; 
     text-decoration: none;
-    align-items: center;
+    text-align: center;
     border-radius: 5px;
-    padding: 20px;
+    padding: 10px 20px;
     border: 2px solid #ccc;
+    align-items: center;
+    padding: 20px;
 }
 .mapa a:hover{
    background-color: rgb(104, 54, 243);
     box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
     color: white;
+    display: inline-block;
     height:50px;
     width:75;
-    display: inline-block;
-    text-align: center;
     text-decoration: none;
+    text-align: center;
     border-radius: 20px;
     padding: 10px 20px;
     border: 2px solid #ccc;
 }
-footer {
-    background-color: #a3a3a3;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    padding: 10px;
-    width: 100%;
-    position: relative;
-    bottom: 0;
-    left: 0;
-}
-    @media (max-width: 992px) {
+
+@media (max-width: 992px) {
     #contacto {
-        gap: 10px;
+       gap: 20px
+    }
+    .item{
+        width: 45%;
     }
 
-    .item {
-        width: 45%;
+    #contacto img {
+        max-width: 250px;
+        margin: 0 auto;
     }
 
     main a {
         width: auto;
     }
-
-    .info, .criterio, .mapa {
-        flex: 1;
-        text-align: center;
-    }
-
-    footer {
-        padding: 20px;
-        font-size: 1.2rem;
-    }
 }
 
 @media (max-width: 780px) {
     #adicional {
-        flex-direction: column;
         gap: 10px;
     }
+
+    .info {
+        flex: 1;
+    }footer{
+    background-color: aliceblue;
+    width: 100%;
+    height: 150px;
 }
 
+footer {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #a3a3a3;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 10px;
+
+}
 
 
 
