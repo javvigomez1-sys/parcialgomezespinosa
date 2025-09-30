@@ -161,7 +161,9 @@ main a:hover {
 
     .info {
         flex: 1;
-    }footer{
+    }
+    
+footer{
     background-color: aliceblue;
     height: 130px;
         width: 100%;
@@ -184,6 +186,7 @@ footer {
     #adicional {
         gap: 10px;
     }
+
 
 
 
